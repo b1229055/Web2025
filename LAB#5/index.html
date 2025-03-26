@@ -1,40 +1,35 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tree Display</title>
-</head>
+<html >
+
 <body>
-    <pre id="tree"></pre>
+
+    
+    <pre id="treeOutput"></pre>
+
     <script>
         function tree(n) {
-            printTreeTop(n);
-            printTreeBottom(n);
-        }
+          printTreeTop(n);
+         printTreeBottom(n);
+}
 
-        function printTreeTop(n) {
-            let result = '';
-            for (let i = 0; i < n; i++) {
-                let spaces = repeatchar(n - i - 1, ' ');
-                let stars = repeatchar(2 * i + 1, '*');
-                result += spaces + stars + '\n';
-            }
-            document.getElementById('tree').innerText += result;
-        }
+function printTreeTop(n) {
+    for (let i = 0; i < n; i++) {
+        console.log(repeatchar(n - i - 1, ' ') + repeatchar(2 * i + 1, '*'));
+    }
+}
 
-        function printTreeBottom(n) {
-            let trunk = repeatchar(n - 1, ' ') + '*';
-            result = trunk + '\n' + trunk + '\n' + trunk + '\n';
-            document.getElementById('tree').innerText += result;
-        }
+function printTreeBottom(n) {
+    for (let i = 0; i <= Math.ceil(n / 3); i++) {
+        console.log(repeatchar(n - 1, ' ') + '*');
+    }
+}
 
-        function repeatchar(count, char) {
-            return char.repeat(count);
-        }
+function repeatchar(n, arg_char) {
+    return arg_char.repeat(n);
+}
 
-        tree(4);  // Change the number for a larger or smaller tree
+// 呼叫函式來測試，這裡設 n = 5
+tree(4);
     </script>
+
 </body>
 </html>
-
