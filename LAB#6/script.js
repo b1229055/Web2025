@@ -6,6 +6,7 @@ function addFunction() {
     btn.setAttribute("id", "btn_" + count);
     btn.setAttribute("class", "btn btn-outline-danger m-2");
     document.getElementById("buttonContainer").appendChild(btn);
+    console.log(`新增按鈕：CLICK ME (${count})`);
     count++;
 }
 
@@ -15,6 +16,7 @@ function delFunction() {
         var btn = document.getElementById("btn_" + count);
         if (btn) {
             document.getElementById("buttonContainer").removeChild(btn);
+            console.log(`刪除按鈕：CLICK ME (${count})`);
         }
     }
 }
