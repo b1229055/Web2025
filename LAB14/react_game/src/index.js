@@ -115,7 +115,7 @@ class Game extends React.Component {
                 {/* <button onClick={() => this.toggleAI()}>
                   {this.state.aiEnabled ? "Turn AI Off" : "Turn AI On"}
                 </button><br /> */}
-                <button onClick={() => this.resetGame()}>Reset Game</button>
+                { /*<button onClick={() => this.resetGame()}>Reset Game</button>*/}
             </div>
         </div>
     );
