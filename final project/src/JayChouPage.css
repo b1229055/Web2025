@@ -1,0 +1,529 @@
+/* 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Arial', 'Microsoft JhengHei', sans-serif;
+    line-height: 1.6;
+    background-color: #f0f2f5;
+  }
+  
+  h1, h2, h3, h4 {
+    margin-bottom: 15px;
+  }
+  
+  p {
+    margin-bottom: 10px;
+  }
+  
+  ul {
+    list-style-position: inside;
+    margin-bottom: 15px;
+  }
+  
+  .jay-chou-page {
+    min-height: 100vh;
+    background-color: #f0f2f5;
+  }
+  
+  
+  .header-banner {
+    background-color: #1e3a8a;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+  }
+  
+  .header-banner h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .header-banner p {
+    font-size: 1.25rem;
+  }
+  
+  
+  .nav-bar {
+    display: flex;
+    justify-content: center;
+    background-color: #1e40af;
+    padding: 10px 0;
+  }
+  
+  .nav-button {
+    margin: 0 15px;
+    padding: 8px 16px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .nav-button.active {
+    background-color: #2563eb;
+  }
+  
+  .nav-button:hover {
+    background-color: #3b82f6;
+  }
+  
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 15px;
+  }
+  
+  
+  .content-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 25px;
+    margin-bottom: 25px;
+  }
+  
+  
+  .biography-content {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  @media (min-width: 768px) {
+    .biography-content {
+      flex-direction: row;
+    }
+  }
+  
+  .profile-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  @media (min-width: 768px) {
+    .profile-image {
+      margin-right: 25px;
+      margin-bottom: 0;
+    }
+  
+    .bio-text {
+      flex: 2;
+    }
+  }
+  
+  .image-placeholder {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    background-color: #e5e7eb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #6b7280;
+  }
+  
+  .bio-paragraphs p {
+    margin-bottom: 15px;
+  }
+  
+  
+  .albums-list {
+    margin-bottom: 30px;
+  }
+  
+  .album-item {
+    border: 1px solid #e5e7eb;
+    border-radius: 6px;
+    overflow: hidden;
+    margin-bottom: 15px;
+  }
+  
+  .album-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #f9fafb;
+    cursor: pointer;
+  }
+  
+  .album-name {
+    font-weight: bold;
+  }
+  
+  .album-year {
+    margin-left: 10px;
+    color: #6b7280;
+  }
+  
+  .album-songs {
+    padding: 15px;
+  }
+  
+  .songs-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+  }
+  
+  @media (min-width: 768px) {
+    .songs-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  .song-item {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    border-radius: 4px;
+  }
+  
+  .song-item:hover {
+    background-color: #f9fafb;
+  }
+  
+  .play-icon {
+    margin-right: 10px;
+    color: #2563eb;
+  }
+  
+  .music-features h3 {
+    margin-top: 30px;
+  }
+  
+  .music-features ul {
+    padding-left: 10px;
+  }
+  
+  .music-features li {
+    margin-bottom: 10px;
+  }
+  
+  
+  .achievements-list {
+    margin-bottom: 30px;
+  }
+  
+  .achievement-item {
+    padding: 12px;
+    background-color: #f9fafb;
+    border-radius: 6px;
+    margin-bottom: 10px;
+  }
+  
+  .show-more-button {
+    display: flex;
+    align-items: center;
+    color: #2563eb;
+    background: none;
+    border: none;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .arrow-icon {
+    margin-right: 5px;
+  }
+  
+  .other-achievements h3 {
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+  
+  .achievements-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 15px;
+  }
+  
+  @media (min-width: 768px) {
+    .achievements-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  .other-achievement-item {
+    padding: 15px;
+    background-color: #f9fafb;
+    border-radius: 6px;
+  }
+  
+  .other-achievement-item h4 {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  
+  .footer {
+    text-align: center;
+    color: #6b7280;
+    margin-top: 40px;
+  }
+  .real-image {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  .avatar:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+  }
+  .card {
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  }
+  .fade-in {
+    opacity: 0;
+    animation: fadeIn 1s ease forwards;
+  }
+  
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  } */
+
+
+  :root {
+    --primary-color: #2563eb;
+    --primary-hover: #3b82f6;
+    --bg-light: #f0f2f5;
+    --bg-white: #ffffff;
+    --text-dark: #1f2937;
+    --text-muted: #6b7280;
+    --shadow-soft: 0 4px 16px rgba(0, 0, 0, 0.1);
+  }
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    transition: all 0.3s ease;
+  }
+  
+  body {
+    font-family: 'Arial', 'Microsoft JhengHei', sans-serif;
+    background-color: var(--bg-light);
+    color: var(--text-dark);
+    line-height: 1.6;
+  }
+  
+  /* 頂部橫幅 */
+  .header-banner {
+    background: linear-gradient(135deg, #1e3a8a, #3b82f6);
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    animation: fadeInTop 1s ease;
+  }
+  
+  .header-banner h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .header-banner p {
+    font-size: 1.25rem;
+  }
+  
+  @keyframes fadeInTop {
+    from {
+      opacity: 0;
+      transform: translateY(-30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* 導覽列 */
+  .nav-bar {
+    display: flex;
+    justify-content: center;
+    background-color: #1e40af;
+    padding: 12px 0;
+  }
+  
+  .nav-button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    background: none;
+    border: 2px solid transparent;
+    border-radius: 25px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .nav-button:hover {
+    background-color: var(--primary-hover);
+    transform: scale(1.05);
+  }
+  
+  .nav-button.active {
+    background-color: white;
+    color: var(--primary-color);
+    border-color: white;
+  }
+  
+  /* 容器與卡片 */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 15px;
+    animation: fadeIn 1s ease;
+  }
+  
+  .content-card {
+    background-color: var(--bg-white);
+    border-radius: 12px;
+    box-shadow: var(--shadow-soft);
+    padding: 25px;
+    margin-bottom: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .content-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* 頭像 */
+  .profile-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .real-image {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: var(--shadow-soft);
+    transition: transform 0.3s ease;
+  }
+  
+  .real-image:hover {
+    transform: scale(1.05);
+  }
+  
+  /* 音樂區塊 */
+  .album-header {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f9fafb;
+    padding: 15px;
+    border-bottom: 1px solid #e5e7eb;
+  }
+  
+  .album-header:hover {
+    background-color: #e0f2fe;
+  }
+  
+  .album-name {
+    font-weight: bold;
+  }
+  
+  .song-item {
+    padding: 10px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .song-item:hover {
+    background-color: #eff6ff;
+    transform: scale(1.02);
+  }
+  
+  .play-icon {
+    color: var(--primary-color);
+    margin-right: 10px;
+  }
+  
+  /* 成就區塊 */
+  .achievement-item,
+  .other-achievement-item {
+    padding: 15px;
+    background-color: #f9fafb;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .achievement-item:hover,
+  .other-achievement-item:hover {
+    background-color: #e0f2fe;
+  }
+  
+  /* 按鈕動畫 */
+  .show-more-button {
+    background: none;
+    border: none;
+    color: var(--primary-color);
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 15px;
+  }
+  
+  .show-more-button:hover {
+    color: var(--primary-hover);
+    transform: translateX(5px);
+  }
+  
+  /* 動畫 */
+  .fade-in {
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+  }
+  
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* 響應式 */
+  @media (min-width: 768px) {
+    .biography-content {
+      display: flex;
+      flex-direction: row;
+    }
+  
+    .profile-image {
+      margin-right: 30px;
+      margin-bottom: 0;
+    }
+  
+    .bio-text {
+      flex: 2;
+    }
+  
+    .songs-grid,
+    .achievements-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
