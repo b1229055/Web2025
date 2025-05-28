@@ -12,21 +12,21 @@ export default function JayChouPage() {
 
 
 const albums = [
-        {
+          {
       id: 0,
       name: 'JAY',
       year: 2000,
       songs: [
-        { title: '可愛女人', url: 'https://www.youtube.com/watch?v=5XK2C9w6oVk' },
-        { title: '完美主義', url: 'https://www.youtube.com/watch?v=Y4xCVlyCvX4' },
-        { title: '星晴', url: 'https://www.youtube.com/watch?v=H7hpK6cm-6k' },
-        { title: '娘子', url: 'https://www.youtube.com/watch?v=CcfnZOJpbM4' },
-        { title: '鬥牛', url: 'https://www.youtube.com/watch?v=N2DkKFxijv0' },
-        { title: '黑色幽默', url: 'https://www.youtube.com/watch?v=lCzWCxVAkfc' },
-        { title: '伊斯坦堡', url: 'https://www.youtube.com/watch?v=OR-0wptI_u0' },
-        { title: '印地安老斑鳩', url: 'https://www.youtube.com/watch?v=1hI-7vj2FhE' },
-        { title: '龍捲風', url: 'https://www.youtube.com/watch?v=nhyT8HDT4lg' },
-        { title: '反方向的鐘', url: 'https://www.youtube.com/watch?v=eM6mF4RWhe0' },
+        { title: '可愛女人', url: 'https://www.youtube.com/watch?v=87VUC4J_0Ps' },
+        { title: '完美主義', url: 'https://www.youtube.com/watch?v=gxZHH8x2zPg' },
+        { title: '星晴', url: 'https://www.youtube.com/watch?v=sTNJsIcPSvE' },
+        { title: '娘子', url: 'https://www.youtube.com/watch?v=MpP9dw_j2PI' },
+        { title: '鬥牛', url: 'https://www.youtube.com/watch?v=npiAxeLtHDM' },
+        { title: '黑色幽默', url: 'https://www.youtube.com/watch?v=wRT-5heURhY' },
+        { title: '伊斯坦堡', url: 'https://www.youtube.com/watch?v=s9wvjSkR_Ms' },
+        { title: '印地安老斑鳩', url: 'https://www.youtube.com/watch?v=hnmWCmR6o7A' },
+        { title: '龍捲風', url: 'https://www.youtube.com/watch?v=RPWDeLqsN0g' },
+        { title: '反方向的鐘', url: 'https://www.youtube.com/watch?v=fuM1aVCGR8c' },
       ],
     },
     {
